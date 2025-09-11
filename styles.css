@@ -1,0 +1,37 @@
+
+:root {
+    --white-- : #ffff;
+    --red--: #F41111;
+    --black: #000;
+    --grey: #434443;
+    --soft-grey: #E8E7E8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Saira Condensed', 'serif';
+}
+
+
+/* Nav items */
+.header__container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    max-width: 1120px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    background-color: var(--black);
+    padding-top: 2rem;
+}
+
+.nav__items {
+    display: flex;
+    gap: 1rem;
+}
