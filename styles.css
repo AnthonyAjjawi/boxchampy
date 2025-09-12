@@ -65,18 +65,19 @@ body {
     display: flex;
     margin: 0 auto;
     padding-top: 2rem;
-    background: url(./assets/Boxer-1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background:  linear-gradient(to right, rgba(0,0,0,0.9) 30%, rgba(0,0,0,0.3) 70%),
+    url('./assets/Boxer-1.jpg') center/cover no-repeat;
     align-items: center;
     
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); */
+    
 }
 
 
+
+
 .hero__title {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: var(--white--);
     text-transform: uppercase;
     padding-left: 10rem
@@ -100,9 +101,10 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    background-color: var(--red--);
+    background-color: var(--white--);
     padding: 2rem 4rem;
-   
+    margin-top: -50px;
+    
 }
 
 .icons__container {
@@ -112,4 +114,15 @@ body {
     justify-content: space-evenly;
     gap: 3rem;
     
+}
+
+.icon {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 0.2rem
+}
+
+.icon__title {
+    color: var(--red--);
 }
