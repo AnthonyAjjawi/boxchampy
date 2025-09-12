@@ -33,19 +33,35 @@ body {
 
 .nav__items {
     display: flex;
+    align-items: center;
     gap: 1rem;
+    line-height: 1.1;
     
 }
 
-.nav__items > li > a{
+
+.nav__items > .nav__items--list {
+    text-transform: uppercase;
+    list-style: none;
+}
+
+
+.nav__items > .nav__items--list > a{
    color: var(--white--);
    text-decoration: none;
 }
 
+.nav__items > .nav__items--list:nth-child(5) {
+    background: var(--red--);
+    padding: 0.5rem;
+}
+
+/* Hero */
+
 .hero__container {
     width: 100%;
     max-width: 1120px;
-    height: 60vh;
+    height: 50vh;
     display: flex;
     margin: 0 auto;
     padding-top: 2rem;
@@ -55,6 +71,7 @@ body {
     background-size: cover;
     align-items: center;
     
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 }
 
 
@@ -72,4 +89,27 @@ body {
 
 .highlight {
     color: var(--red--);
+}
+
+/* icon box */
+.icons {
+    width: 100%;
+    max-width: 740px;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: var(--red--);
+    padding: 2rem 4rem;
+   
+}
+
+.icons__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3rem;
+    
 }
