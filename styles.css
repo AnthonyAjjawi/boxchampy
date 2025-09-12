@@ -34,4 +34,42 @@ body {
 .nav__items {
     display: flex;
     gap: 1rem;
+    
+}
+
+.nav__items > li > a{
+   color: var(--white--);
+   text-decoration: none;
+}
+
+.hero__container {
+    width: 100%;
+    max-width: 1120px;
+    height: 60vh;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 2rem;
+    background: url(./assets/Boxer-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    
+}
+
+
+.hero__title {
+    font-size: 2rem;
+    color: var(--white--);
+    text-transform: uppercase;
+    padding-left: 10rem
+    
+}
+
+.hero__title > h1 {
+    line-height: 3.5rem;
+}
+
+.highlight {
+    color: var(--red--);
 }
